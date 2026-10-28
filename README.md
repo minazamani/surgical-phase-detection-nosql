@@ -1,6 +1,6 @@
 # Surgical Phase Detection and Video Indexing with MongoDB
 
-An end-to-end prototype for **automatic surgical phase recognition and temporal video indexing**.
+An end-to-end system for **automatic surgical phase recognition and temporal video indexing**.
 
 The project converts long surgical videos into searchable phase intervals:
 
@@ -28,7 +28,7 @@ MongoDB
 
 ## 1. Project goal
 
-Surgical videos are long and difficult to inspect or search manually. This project builds a first operational pipeline that:
+Surgical videos are long and difficult to inspect or search manually. The project implements a pipeline that:
 
 1. reads annotated surgical workflow data;
 2. prepares per-second phase labels;
@@ -359,7 +359,7 @@ JSON / MongoDB
 
 ### `predict_new_videos_mongo.py`
 
-Recommended demonstrator entry point for **all supported videos in a folder**.
+Main entry point for **all supported videos in a folder**.
 
 Supported extensions currently include:
 
@@ -530,7 +530,7 @@ These queries illustrate the main purpose of the project: turning a video archiv
 
 ## 13. Repository structure
 
-A clean GitHub layout is recommended:
+Repository layout:
 
 ```text
 surgical-phase-detection/
@@ -558,7 +558,7 @@ surgical-phase-detection/
 └── new_video_predictions/
 ```
 
-If the uploaded filenames `mstcn(1).py` and `feature(1).py` are only upload-name collisions, rename them in the repository to:
+Use the following filenames in the repository:
 
 ```text
 mstcn.py
@@ -683,7 +683,7 @@ Never commit:
 
 ## 17. Security and clinical-data note
 
-This repository is a technical prototype. When applied to real clinical/surgical data:
+This repository is a technical system. When applied to real clinical/surgical data:
 
 - keep source videos in approved secure storage;
 - store only the metadata needed by the application;
@@ -692,17 +692,17 @@ This repository is a technical prototype. When applied to real clinical/surgical
 - keep credentials outside source code;
 - follow the applicable organizational, ethical, regulatory, and data-governance requirements.
 
-The current demonstrator uses a local MongoDB deployment and can therefore keep the indexing metadata on the controlled machine rather than sending it to a public cloud service.
+The current setup uses a local MongoDB deployment so indexing metadata can remain on the controlled machine rather than being sent to a public cloud service.
 
 ---
 
 ## 18. Main result
 
-The prototype demonstrates an end-to-end connection between **computer vision**, **temporal action segmentation**, and **NoSQL data management**:
+The system connects **computer vision**, **temporal action segmentation**, and **NoSQL data management**:
 
 > A new surgical video can be automatically transformed into structured phase intervals and indexed as a searchable MongoDB document.
 
-This creates a foundation for future functionality such as:
+The architecture supports future functionality such as:
 
 - phase-based video search;
 - direct navigation to relevant video intervals;
@@ -716,7 +716,7 @@ This creates a foundation for future functionality such as:
 
 ## 19. Status
 
-This repository should be considered a **first operational prototype** rather than a production clinical system.
+This repository is a research and development implementation rather than a production clinical system.
 
 Current strengths:
 
@@ -728,7 +728,7 @@ Current strengths:
 - batch video processing;
 - MongoDB indexing.
 
-Potential future improvements:
+Planned improvements:
 
 - motion-aware / video feature encoders;
 - tag prediction in addition to phase prediction;
