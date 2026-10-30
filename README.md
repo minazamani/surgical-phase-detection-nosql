@@ -669,16 +669,6 @@ VIDEO_DIR
 VIDEO_FOLDER
 CHECKPOINT_PATH
 OUTPUT_DIR
-```
-
-Never commit:
-
-- MongoDB passwords;
-- patient identifiers;
-- private clinical videos;
-- local credentials;
-- confidential annotation spreadsheets unless explicitly approved.
-
 ---
 
 ## 17. Security and clinical-data note
@@ -714,27 +704,3 @@ The architecture supports future functionality such as:
 
 ---
 
-## 19. Status
-
-This repository is a research and development implementation rather than a production clinical system.
-
-Current strengths:
-
-- complete train / validation / test workflow;
-- surgery-level data splitting;
-- raw-video inference;
-- second-level and segment-level evaluation;
-- temporal cleanup;
-- batch video processing;
-- MongoDB indexing.
-
-Planned improvements:
-
-- motion-aware / video feature encoders;
-- tag prediction in addition to phase prediction;
-- confidence scores per interval;
-- configuration files instead of hard-coded paths;
-- automated tests;
-- MongoDB schema validation;
-- dashboard / UI;
-- model and data version tracking.
