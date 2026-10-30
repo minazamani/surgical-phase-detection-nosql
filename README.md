@@ -672,16 +672,7 @@ OUTPUT_DIR
 ---
 
 ```
-## 17. Security and clinical-data note
-
-This repository is a technical system. When applied to real clinical/surgical data:
-
-- keep source videos in approved secure storage;
-- store only the metadata needed by the application;
-- use authentication and least-privilege database users;
-- restrict MongoDB network access;
-- keep credentials outside source code;
-- follow the applicable organizational, ethical, regulatory, and data-governance requirements.
+## 17. Security
 
 The current setup uses a local MongoDB deployment so indexing metadata can remain on the controlled machine rather than being sent to a public cloud service.
 
