@@ -684,15 +684,5 @@ The system connects **computer vision**, **temporal action segmentation**, and *
 
 > A new surgical video can be automatically transformed into structured phase intervals and indexed as a searchable MongoDB document.
 
-The architecture supports future functionality such as:
-
-- phase-based video search;
-- direct navigation to relevant video intervals;
-- phase-duration statistics;
-- quality-control dashboards;
-- model-version tracking;
-- processing-status monitoring;
-- integration with wider clinical data-management workflows.
-
 ---
 
