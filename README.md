@@ -670,7 +670,7 @@ VIDEO_FOLDER
 CHECKPOINT_PATH
 OUTPUT_DIR
 ---
-
+---
 ## 17. Security and clinical-data note
 
 This repository is a technical system. When applied to real clinical/surgical data:
