@@ -668,8 +668,6 @@ Example environment configuration:
 export MONGO_URI='mongodb://USERNAME:PASSWORD@127.0.0.1:27017/?authSource=admin'
 ```
 
-This avoids committing a real password to GitHub.
-
 The batch pipeline verifies the connection using:
 
 ```python
